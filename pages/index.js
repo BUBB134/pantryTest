@@ -1,12 +1,12 @@
 import { firestore, model } from '@/firebase'
-import AddCircleIcon from '@mui/icons-material/AddCircle'
-import CachedIcon from '@mui/icons-material/Cached'
-import DeleteIcon from '@mui/icons-material/Delete'
-import EditIcon from '@mui/icons-material/Edit'
-import RestaurantIcon from '@mui/icons-material/Restaurant'
-import { AppBar, Box, Button, Checkbox, CircularProgress, IconButton, Modal, Stack, TextField, Toolbar, Typography } from '@mui/material'
+import { Toolbar, AppBar, Box, Button, Modal, Stack, TextField, Typography, IconButton, Checkbox, CircularProgress } from '@mui/material'
 import { collection, deleteDoc, doc, getDoc, getDocs, query, setDoc } from 'firebase/firestore'
 import { useEffect, useState } from 'react'
+import AddCircleIcon from '@mui/icons-material/AddCircle'
+import EditIcon from '@mui/icons-material/Edit'
+import DeleteIcon from '@mui/icons-material/Delete'
+import RestaurantIcon from '@mui/icons-material/Restaurant'
+import CachedIcon from '@mui/icons-material/Cached'
 
 export default function Home() {
   const [inventory, setInventory] = useState([])
